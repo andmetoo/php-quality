@@ -1,4 +1,4 @@
-ROM php:7.1-alpine
+FROM php:7.2-alpine
 
 RUN cd /usr/local/bin \
     && curl -sL http://cs.sensiolabs.org/download/php-cs-fixer-v2.phar -o php-cs-fixer \
