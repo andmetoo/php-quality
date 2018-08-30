@@ -10,4 +10,4 @@ WORKDIR /app
 
 LABEL maintainer "Radik Ilin <andmetoo@mail.ru"
 
-LABEL version="0.1.0"
+LABEL version="1.0.0"
