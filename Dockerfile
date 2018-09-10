@@ -1,4 +1,4 @@
-FROM php:7.2-alpine
+FROM php:7.0-alpine
 
 RUN apk add --update openssh-client bash wget curl git
 
@@ -13,4 +13,4 @@ WORKDIR /app
 
 LABEL maintainer "Radik Ilin <andmetoo@mail.ru"
 
-LABEL version="1.0.2"
+LABEL version="1.0.3"
