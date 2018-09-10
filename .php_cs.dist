@@ -39,8 +39,10 @@ $excludes = [
 
 echo("App Dir ".__DIR__."\n");
 
+$appDir = getenv('APP_DIRECTORY', __DIR__.'/src')
+
 $finder = PhpCsFixer\Finder::create()
-    ->in(__DIR__.'/App')
+    ->in($appDir)
     ->exclude($excludes);
 
 return PhpCsFixer\Config::create()
