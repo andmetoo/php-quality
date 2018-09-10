@@ -7,7 +7,7 @@ RUN curl -sL http://cs.sensiolabs.org/download/php-cs-fixer-v2.phar -o /usr/loca
 
 RUN apk add --update openssh-client bash
 
-RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/bin --filename=composer 
+RUN curl -sS https://getcomposer.org/installer | php --install-dir=/usr/local/bin --filename=composer 
 
 WORKDIR /app
 
