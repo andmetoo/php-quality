@@ -5,8 +5,12 @@ RUN curl -sL http://cs.sensiolabs.org/download/php-cs-fixer-v2.phar -o /usr/loca
     && curl -sL https://squizlabs.github.io/PHP_CodeSniffer/phpcs.phar -o /usr/local/bin/php-snif \
 	&& chmod +x php-snif
 
+RUN apk add --update openssh-client bash
+
+RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/bin --filename=composer 
+
 WORKDIR /app
 
 LABEL maintainer "Radik Ilin <andmetoo@mail.ru"
 
-LABEL version="1.0.1"
+LABEL version="1.0.2"
